@@ -1,0 +1,9 @@
+{
+	"name": "yuptogun.com",
+	"short_name": "엽토군닷컴",
+	"lang": "ko",
+	"start_url": "/",
+	"display": "browser",
+	"orientation": "any",
+	"theme_color": "#dc143c"
+}
