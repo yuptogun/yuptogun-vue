@@ -26,7 +26,7 @@
         "name": "YouTube",
         "contact": "김어진",
         "url": "https://youtube.com/c/김어진",
-        "attributes": ["socialnetwork", "content"],
+        "attributes": ["content"],
         "icon": {
             "type": "icon",
             "content": ["fab", "youtube"]
@@ -236,7 +236,7 @@
         "name": "LinkedIn",
         "contact": "eojin",
         "url": "https://www.linkedin.com/in/eojin/",
-        "attributes": ["socialnetwork"],
+        "attributes": ["contact"],
         "icon": {
             "type": "icon",
             "content": ["fab", "linkedin-in"]
@@ -284,6 +284,18 @@
         "icon": {
             "type": "icon",
             "content": ["fab", "ello"]
+        }
+    },
+    {
+        "id": "aboutme",
+        "name": "about.me",
+        "contact": "eojin",
+        "url": "https://about.me/eojin",
+        "attributes": ["contact"],
+        "rel": true,
+        "icon": {
+            "type": "text",
+            "content": null
         }
     },
     {
