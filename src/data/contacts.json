@@ -1,0 +1,58 @@
+[
+    {
+        "id": "twitter",
+        "name": "Twitter",
+        "contact": "yuptogun",
+        "url": "https://twitter.com/yuptogun",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": "bi bi-twitter"
+        }
+    },
+    {
+        "id": "facebook",
+        "name": "Facebook",
+        "contact": "yuptogun",
+        "url": "https://facebook.com/yuptogun",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": "bi bi-facebook"
+        }
+    },
+    {
+        "id": "mastodon",
+        "name": "mastodon.social",
+        "contact": "yuptogun",
+        "url": "https://mastodon.social/@yuptogun",
+        "attributes": ["socialnetwork"],
+        "rel": true,
+        "icon": {
+            "type": "icon",
+            "content": "bi bi-mastodon"
+        }
+    },
+    {
+        "id": "tistory",
+        "name": "tistory",
+        "contact": "yuptogun",
+        "url": "https://yuptogun.tistory.com",
+        "attributes": ["content"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "velog",
+        "name": "velog",
+        "contact": "@eojin",
+        "url": "https://velog.io/@eojin",
+        "attributes": ["content"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    }
+]

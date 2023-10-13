@@ -1,67 +1,11 @@
 <script setup>
-import { ref, reactive, computed } from 'vue';
+import { ref, computed } from 'vue';
 import Contact from "../components/Contact.vue";
+import data from "../data/contacts.json";
 
 const filterText = ref('');
 const filterTypes = ref([]);
-const contacts = ref([
-    {
-        "id": "twitter",
-        "name": "Twitter",
-        "contact": "yuptogun",
-        "url": "https://twitter.com/yuptogun",
-        "attributes": ["socialnetwork"],
-        "icon": {
-            "type": "icon",
-            "content": "bi bi-twitter"
-        }
-    },
-    {
-        "id": "facebook",
-        "name": "Facebook",
-        "contact": "yuptogun",
-        "url": "https://facebook.com/yuptogun",
-        "attributes": ["socialnetwork"],
-        "icon": {
-            "type": "icon",
-            "content": "bi bi-facebook"
-        }
-    },
-    {
-        "id": "mastodon",
-        "name": "mastodon.social",
-        "contact": "yuptogun",
-        "url": "https://mastodon.social/@yuptogun",
-        "attributes": ["socialnetwork"],
-        "rel": true,
-        "icon": {
-            "type": "icon",
-            "content": "bi bi-mastodon"
-        }
-    },
-    {
-        "id": "tistory",
-        "name": "tistory",
-        "contact": "yuptogun",
-        "url": "https://yuptogun.tistory.com",
-        "attributes": ["content"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    },
-    {
-        "id": "velog",
-        "name": "velog",
-        "contact": "@eojin",
-        "url": "https://velog.io/@eojin",
-        "attributes": ["content"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    }
-]);
+const contacts = ref(data);
 const filteredContacts = computed(() => {
     return contacts.value.filter((c) => {
         return c.id.includes(filterText.value)
