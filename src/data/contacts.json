@@ -7,7 +7,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": "bi bi-twitter"
+            "content": ["fab", "twitter"]
         }
     },
     {
@@ -18,7 +18,29 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": "bi bi-facebook"
+            "content": ["fab", "facebook-f"]
+        }
+    },
+    {
+        "id": "youtube",
+        "name": "YouTube",
+        "contact": "김어진",
+        "url": "https://youtube.com/c/김어진",
+        "attributes": ["socialnetwork", "content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "youtube"]
+        }
+    },
+    {
+        "id": "instagram",
+        "name": "Instagram",
+        "contact": "yuptogun",
+        "url": "https://instagram.com/yuptogun",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "instagram"]
         }
     },
     {
@@ -30,12 +52,56 @@
         "rel": true,
         "icon": {
             "type": "icon",
-            "content": "bi bi-mastodon"
+            "content": ["fab", "mastodon"]
+        }
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "contact": "yuptogun",
+        "url": "https://github.com/yuptogun/",
+        "attributes": ["content", "dev"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "github"]
+        }
+    },
+    {
+        "id": "velog",
+        "name": "velog",
+        "contact": "@eojin",
+        "url": "https://velog.io/@eojin",
+        "attributes": ["content", "dev"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "so",
+        "name": "StackOverflow",
+        "contact": "yuptogun",
+        "url": "https://stackoverflow.com/users/8680764/",
+        "attributes": ["dev"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "stack-overflow"]
+        }
+    },
+    {
+        "id": "codepen",
+        "name": "Codepen",
+        "contact": "yuptogun",
+        "url": "https://codepen.io/yuptogun/",
+        "attributes": ["dev", "content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "codepen"]
         }
     },
     {
         "id": "tistory",
-        "name": "tistory",
+        "name": "Tistory",
         "contact": "yuptogun",
         "url": "https://yuptogun.tistory.com",
         "attributes": ["content"],
@@ -45,14 +111,290 @@
         }
     },
     {
-        "id": "velog",
-        "name": "velog",
-        "contact": "@eojin",
-        "url": "https://velog.io/@eojin",
+        "id": "tumblr",
+        "name": "Tumblr",
+        "contact": "yuptogun",
+        "url": "https://yuptogun.tumblr.com",
+        "attributes": ["content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "tumblr"]
+        }
+    },
+    {
+        "id": "ghost",
+        "name": "ghost",
+        "contact": "yuptogun",
+        "url": "https://ghost.yuptogun.com",
         "attributes": ["content"],
         "icon": {
             "type": "text",
             "content": null
+        }
+    },
+    {
+        "id": "animeta",
+        "name": "animeta",
+        "contact": "eojin",
+        "url": "https://animeta.net/users/eojin/",
+        "attributes": ["socialnetwork", "content"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "wikipedia",
+        "name": "Wikipedia",
+        "contact": "김어진",
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:%EA%B9%80%EC%96%B4%EC%A7%84",
+        "attributes": ["content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "wikipedia-w"]
+        }
+    },
+    {
+        "id": "threads",
+        "name": "Threads",
+        "contact": "yuptogun",
+        "url": "https://threads.net/@yuptogun",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "threads"]
+        }
+    },
+    {
+        "id": "reddit",
+        "name": "Reddit",
+        "contact": "yuptogun",
+        "url": "https://reddit.com/user/yuptogun/",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "reddit-alien"]
+        }
+    },
+    {
+        "id": "biblecom",
+        "name": "Bible.com",
+        "contact": "yuptogun",
+        "url": "https://my.bible.com/users/yuptogun",
+        "attributes": ["socialnetwork", "content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fas", "book-bible"]
+        }
+    },
+    {
+        "id": "lastfm",
+        "name": "last.fm",
+        "contact": "yuptogun",
+        "url": "https://www.last.fm/user/yuptogun/",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "lastfm"]
+        }
+    },
+    {
+        "id": "snippet",
+        "name": "Snippet",
+        "contact": "@eojin",
+        "url": "https://snippet.cloudmt.co.kr/@eojin",
+        "attributes": ["dev"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "programmers",
+        "name": "Programmers",
+        "contact": "엽토군",
+        "url": "https://community.programmers.co.kr/users/81197/activity",
+        "attributes": ["dev"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "packagist",
+        "name": "Packagist",
+        "contact": "yuptogun",
+        "url": "https://packagist.org/packages/yuptogun/",
+        "attributes": ["dev"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "php"]
+        }
+    },
+    {
+        "id": "linkedin",
+        "name": "LinkedIn",
+        "contact": "eojin",
+        "url": "https://www.linkedin.com/in/eojin/",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "linkedin-in"]
+        }
+    },
+    {
+        "id": "soundcloud",
+        "name": "SoundCloud",
+        "contact": "yuptogun",
+        "url": "https://soundcloud.com/yuptogun/",
+        "attributes": ["content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "soundcloud"]
+        }
+    },
+    {
+        "id": "flickr",
+        "name": "Flickr",
+        "contact": "yuptogun",
+        "url": "https://flickr.com/yuptogun/",
+        "attributes": ["content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "flickr"]
+        }
+    },
+    {
+        "id": "weibo",
+        "name": "Weibo",
+        "contact": "yuptogun",
+        "url": "https://weibo.com/yuptogun/",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "weibo"]
+        }
+    },
+    {
+        "id": "ello",
+        "name": "Ello",
+        "contact": "eojin",
+        "url": "https://ello.co/eojin/",
+        "attributes": ["content"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "ello"]
+        }
+    },
+    {
+        "id": "gravatar",
+        "name": "Gravatar",
+        "contact": "yuptogun",
+        "url": "https://gravatar.com/yuptogun",
+        "attributes": ["contact"],
+        "rel": true,
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "patreon",
+        "name": "Patreon",
+        "contact": "eojin",
+        "url": "https://www.patreon.com/eojin/",
+        "attributes": ["financial"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "patreon"]
+        }
+    },
+    {
+        "id": "kickstarter",
+        "name": "Kickstarter",
+        "contact": "eojin",
+        "url": "https://www.kickstarter.com/profile/eojin",
+        "attributes": ["financial"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "kickstarter-k"]
+        }
+    },
+    {
+        "id": "bandcamp",
+        "name": "Bandcamp",
+        "contact": "yuptogun",
+        "url": "https://bandcamp.com/yuptogun/",
+        "attributes": ["financial"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "bandcamp"]
+        }
+    },
+    {
+        "id": "tumblbug",
+        "name": "Tumblbug",
+        "contact": "eojin",
+        "url": "https://tumblbug.com/u/eojin/backed",
+        "attributes": ["financial"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
+        "id": "paypal",
+        "name": "PayPal",
+        "contact": "yuptogun",
+        "url": "https://paypal.me/yuptogun/",
+        "attributes": ["financial", "contact"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "paypal"]
+        }
+    },
+    {
+        "id": "telegram",
+        "name": "Telegram",
+        "contact": "yuptogun",
+        "url": "https://t.me/yuptogun/",
+        "attributes": ["contact"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "telegram"]
+        }
+    },
+    {
+        "id": "keybase",
+        "name": "Keybase",
+        "contact": "eojin",
+        "url": "https://keybase.io/eojin",
+        "attributes": ["contact"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "keybase"]
+        }
+    },
+    {
+        "id": "skype",
+        "name": "Skype",
+        "contact": "yuptogun",
+        "url": null,
+        "attributes": ["contact"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "skype"]
+        }
+    },
+    {
+        "id": "gmail",
+        "name": "Gmail",
+        "contact": "yuptogun",
+        "url": "mailto:yuptogun@gmail.com",
+        "attributes": ["contact"],
+        "icon": {
+            "type": "icon",
+            "content": ["fab", "google"]
         }
     }
 ]
