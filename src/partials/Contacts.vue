@@ -2,7 +2,9 @@
 import { ref, reactive, computed } from 'vue';
 import Contact from "../components/Contact.vue";
 
-const contacts = reactive([
+const filterText = ref('');
+const filterTypes = ref([]);
+const contacts = ref([
     {
         "id": "twitter",
         "name": "Twitter",
@@ -44,7 +46,8 @@ const contacts = reactive([
         "url": "https://yuptogun.tistory.com",
         "attributes": ["content"],
         "icon": {
-            "type": "text"
+            "type": "text",
+            "content": null
         }
     },
     {
@@ -54,18 +57,27 @@ const contacts = reactive([
         "url": "https://velog.io/@eojin",
         "attributes": ["content"],
         "icon": {
-            "type": "text"
+            "type": "text",
+            "content": null
         }
     }
 ]);
+const filteredContacts = computed(() => {
+    return contacts.value.filter((c) => {
+        return c.id.includes(filterText.value)
+            || c.name.includes(filterText.value)
+            || c.contact.includes(filterText.value)
+            || (filterTypes.value.length && filterTypes.value.every(type => c.attributes.contains(type)));
+        });
+});
 const searchPlaceholder = computed(() => {
-    return '총 ' + contacts.length + '개 연락처 검색';
+    return '총 ' + filteredContacts.value.length + '개 연락처 검색';
 });
 </script>
 
 <template>
     <div id="contacts" class="p-5">
-        <input type="text" v-model="contactSearch" class="block border rounded mb-3" :placeholder="searchPlaceholder" />
-        <Contact v-for="c in contacts" :key="c.id" :contact="c"></Contact>
+        <input type="text" v-model="filterText" class="block border rounded mb-3" :placeholder="searchPlaceholder" />
+        <Contact v-for="c in filteredContacts" :key="c.id" :contact="c"></Contact>
     </div>
 </template>
