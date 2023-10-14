@@ -32,9 +32,11 @@ const searchPlaceholder = computed(() => {
 </script>
 
 <template>
-    <div id="contacts" class="p-5">
-        <div class="block mb-3">
-            <input type="text" v-model="filterText" class="inline-block border border-gray-300 rounded me-4 mb-2" :placeholder="searchPlaceholder" />
+    <div id="contacts">
+        <div class="block mb-3 box-border">
+            <div class="inline-block me-4 mb-2">
+                <input type="text" v-model="filterText" class="rounded border border-gray-300 w-full" :placeholder="searchPlaceholder" />
+            </div>
             <div class="inline-block">
                 <template v-for="option in filterTypeOptions" :key="option.value">
                     <label class="me-4 mb-2 inline-block select-none">
