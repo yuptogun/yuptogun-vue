@@ -3,6 +3,13 @@ import { ref, computed } from 'vue';
 import Contact from "../components/Contact.vue";
 import data from "../data/contacts.json";
 
+const filterTypeOptions = [
+    {"value": "socialnetwork", "label": "SNS"},
+    {"value": "content", "label": "창작"},
+    {"value": "dev", "label": "개발"},
+    {"value": "financial", "label": "후원/구매"},
+    {"value": "contact", "label": "연락처"}
+];
 const contacts = ref(data);
 const filterText = ref('');
 const filterTypes = ref([]);
@@ -29,26 +36,12 @@ const searchPlaceholder = computed(() => {
         <div class="block mb-3">
             <input type="text" v-model="filterText" class="inline-block border border-gray-300 rounded me-4 mb-2" :placeholder="searchPlaceholder" />
             <div class="inline-block">
-                <label class="me-4 mb-2 inline-block">
-                    <input type="checkbox" class="rounded" v-model="filterTypes" value="socialnetwork" />
-                    SNS
-                </label>
-                <label class="me-4 mb-2 inline-block">
-                    <input type="checkbox" class="rounded" v-model="filterTypes" value="content" />
-                    창작
-                </label>
-                <label class="me-4 mb-2 inline-block">
-                    <input type="checkbox" class="rounded" v-model="filterTypes" value="dev" />
-                    개발
-                </label>
-                <label class="me-4 mb-2 inline-block">
-                    <input type="checkbox" class="rounded" v-model="filterTypes" value="financial" />
-                    (금전)거래
-                </label>
-                <label class="me-4 mb-2 inline-block">
-                    <input type="checkbox" class="rounded" v-model="filterTypes" value="contact" />
-                    연락처
-                </label>
+                <template v-for="option in filterTypeOptions" :key="option.value">
+                    <label class="me-4 mb-2 inline-block select-none">
+                        <input type="checkbox" class="rounded" v-model="filterTypes" :value="option.value" />
+                        {{ option.label }}
+                    </label>
+                </template>
             </div>
         </div>
         <Contact v-for="c in filteredContacts" :key="c.id" :contact="c"></Contact>
