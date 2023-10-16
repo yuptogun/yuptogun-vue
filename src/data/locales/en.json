@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "title": "yuptogun.com"
+    },
+    "intro": {
+        "name": {
+            "name": "yuptogun",
+            "description": "/yup toe goon/ + preferably written fully in lowercase",
+            "explanation": "Originated most plausibly from Mashimaro the \"Yeopgi Tokki.\""
+        },
+        "personalInfo": {
+            "summary": "Born in Jeju, Korea in December 1989"
+        }
+    },
+    "contacts": {
+        "placeholders": {
+            "filterText": "{filtered} accounts filtered",
+            "noResult": "I don't have any account like that! Try again."
+        },
+        "labels": {
+            "socialnetwork": "social networks",
+            "content": "for creative works",
+            "dev": "for developer career",
+            "financial": "for paying/receiving funds",
+            "contact": "contact points"
+        }
+    }
+}

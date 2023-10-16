@@ -1,15 +1,11 @@
 <script setup>
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import Contact from "../components/Contact.vue";
 import data from "../data/contacts.json";
 
-const filterTypeOptions = [
-    {"value": "socialnetwork", "label": "SNS"},
-    {"value": "content", "label": "창작"},
-    {"value": "dev", "label": "개발"},
-    {"value": "financial", "label": "후원/구매"},
-    {"value": "contact", "label": "연락처"}
-];
+const i18n = useI18n();
+const filterTypeOptions = ['socialnetwork', 'content', 'dev', 'financial', 'contact'];
 const contacts = ref(data);
 const filterText = ref('');
 const filterTypes = ref([]);
@@ -29,7 +25,7 @@ const filteredContacts = computed(() => {
     });
 });
 const searchPlaceholder = computed(() => {
-    return '총 ' + contacts.value.length + '개 계정 검색';
+    return i18n.t('contacts.placeholders.filterText', {filtered: filteredContacts.value.length});
 });
 </script>
 
@@ -40,17 +36,17 @@ const searchPlaceholder = computed(() => {
                 <input type="text" v-model="filterText" class="rounded border border-gray-300 w-full" :placeholder="searchPlaceholder" />
             </div>
             <div class="inline-block">
-                <template v-for="option in filterTypeOptions" :key="option.value">
+                <template v-for="option in filterTypeOptions" :key="option">
                     <label class="me-4 mb-2 inline-block select-none">
-                        <input type="checkbox" class="rounded" v-model="filterTypes" :value="option.value" />
-                        {{ option.label }}
+                        <input type="checkbox" class="rounded" v-model="filterTypes" :value="option" />
+                        {{ i18n.t('contacts.labels.' + option) }}
                     </label>
                 </template>
             </div>
         </div>
         <Contact v-for="c in filteredContacts" :key="c.id" :contact="c"></Contact>
         <div v-if="filteredContacts.length == 0">
-            <p class="text-center text-lg">다시 검색해 주세요!</p>
+            <p class="text-lg pt-1">{{ $t('contacts.placeholders.noResult') }}</p>
         </div>
     </div>
 </template>
