@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "title": "엽토군닷컴"
+    },
+    "intro": {
+        "name": {
+            "name": "엽토군",
+            "description": "yuptogun / 獵兎君",
+            "explanation": "'엽기토끼'에서 왔다는 설이 가장 유력"
+        },
+        "personalInfo": {
+            "summary": "8912**-19*****"
+        }
+    },
+    "contacts": {
+        "placeholders": {
+            "filterText": "{filtered}개 계정 검색",
+            "noResult": "다시 검색해 주세요!"
+        },
+        "labels": {
+            "socialnetwork": "SNS",
+            "content": "창작",
+            "dev": "개발",
+            "financial": "후원/구매",
+            "contact": "연락처"
+        }
+    }
+}
