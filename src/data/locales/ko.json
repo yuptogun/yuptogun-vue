@@ -14,7 +14,7 @@
     },
     "contacts": {
         "placeholders": {
-            "filterText": "{filtered}개 계정 검색",
+            "filterText": "검색된 계정 없음 | {filtered}개 계정 검색 | {filtered}개 계정 검색",
             "noResult": "다시 검색해 주세요!"
         },
         "labels": {

@@ -233,7 +233,7 @@
         "name": "Programmers",
         "alias": ["프로그래머스", "해시코드", "hashcode"],
         "contact": "엽토군",
-        "url": "https://community.programmers.co.kr/users/81197/activity",
+        "url": "https://qna.programmers.co.kr/users/81197/",
         "attributes": ["dev"],
         "icon": {
             "type": "text",
@@ -396,6 +396,18 @@
         "icon": {
             "type": "icon",
             "content": ["fab", "paypal"]
+        }
+    },
+    {
+        "id": "toss",
+        "name": "Toss",
+        "alias": ["토스"],
+        "contact": "eojin",
+        "url": "https://toss.me/eojin",
+        "attributes": ["financial"],
+        "icon": {
+            "type": "text",
+            "content": null
         }
     },
     {

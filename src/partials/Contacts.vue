@@ -25,7 +25,7 @@ const filteredContacts = computed(() => {
     });
 });
 const searchPlaceholder = computed(() => {
-    return i18n.t('contacts.placeholders.filterText', {filtered: filteredContacts.value.length});
+    return i18n.t('contacts.placeholders.filterText', {filtered: filteredContacts.value.length}, filteredContacts.value.length);
 });
 </script>
 
