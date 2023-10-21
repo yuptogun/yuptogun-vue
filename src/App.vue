@@ -7,10 +7,10 @@ import Navigation from './partials/Navigation.vue';
 
 <template>
   <div class="flex flex-row h-full">
-    <div class="flex-none p-5 self-start sticky top-0 self-start">
+    <div class="flex-none p-4 md:p-5 self-start sticky top-0 self-start">
       <Navigation></Navigation>
     </div>
-    <div class="pt-5">
+    <div class="pt-4 ps-2 md:pt-5 md:ps-5">
       <Intro></Intro>
       <Contacts></Contacts>
     </div>
