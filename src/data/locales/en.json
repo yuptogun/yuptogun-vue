@@ -14,7 +14,7 @@
     },
     "contacts": {
         "placeholders": {
-            "filterText": "{filtered} accounts filtered",
+            "filterText": "no accounts filtered | {filtered} account filtered | {filtered} accounts filtered",
             "noResult": "I don't have any account like that! Try again."
         },
         "labels": {
