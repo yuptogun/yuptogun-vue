@@ -255,7 +255,7 @@
     {
         "id": "packagist",
         "name": "Packagist",
-        "alias": [],
+        "alias": ["php"],
         "contact": "yuptogun",
         "url": "https://packagist.org/packages/yuptogun/",
         "attributes": ["dev"],
@@ -267,7 +267,7 @@
     {
         "id": "linkedin",
         "name": "LinkedIn",
-        "alias": [],
+        "alias": ["링크드인"],
         "contact": "eojin",
         "url": "https://www.linkedin.com/in/eojin/",
         "attributes": ["contact"],
@@ -291,7 +291,7 @@
     {
         "id": "flickr",
         "name": "Flickr",
-        "alias": [],
+        "alias": ["플리커"],
         "contact": "yuptogun",
         "url": "https://flickr.com/yuptogun/",
         "attributes": ["content"],
@@ -303,7 +303,7 @@
     {
         "id": "weibo",
         "name": "Weibo",
-        "alias": [],
+        "alias": ["웨이보"],
         "contact": "yuptogun",
         "url": "https://weibo.com/yuptogun/",
         "attributes": ["socialnetwork"],
