@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n';
 const i18n = useI18n();
 
 const changeLocale = function (l) {
+    window.localStorage.locale = l;
     i18n.locale.value = l;
 };
 </script>
