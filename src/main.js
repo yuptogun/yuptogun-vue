@@ -13,7 +13,7 @@ library.add(fab, fas)
 
 const i18n = createI18n({
     legacy: false,
-    locale: 'ko',
+    locale: window.localStorage.locale || 'ko',
     messages: {
         ko: ko,
         en: en
