@@ -181,6 +181,18 @@
         }
     },
     {
+        "id": "bsky",
+        "name": "BlueSky",
+        "alias": ["블스", "블루스카이"],
+        "contact": "eojin",
+        "url": "https://bsky.app/profile/eojin.bsky.social",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
         "id": "reddit",
         "name": "Reddit",
         "alias": [],
