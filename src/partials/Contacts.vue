@@ -7,9 +7,11 @@ import data from "../data/contacts.json";
 const i18n = useI18n();
 const filterTypeOptions = ['socialnetwork', 'content', 'dev', 'financial', 'contact'];
 const contacts = ref(data);
-const filterText = ref('');
-const filterTypes = ref([]);
+const filterText = ref(window.localStorage.getItem('filterText') || '');
+const filterTypes = ref(JSON.parse(window.localStorage.getItem('filterTypes') || '[]'));
 const filteredContacts = computed(() => {
+    window.localStorage.setItem('filterText', filterText.value);
+    window.localStorage.setItem('filterTypes', JSON.stringify(filterTypes.value));
     return contacts.value.filter((c) => {
         let filterTextValue = filterText.value.toLowerCase();
         const textMatches = filterTextValue == '' || (
