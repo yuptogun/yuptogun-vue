@@ -32,8 +32,8 @@ const searchPlaceholder = computed(() => {
 </script>
 
 <template>
-    <div id="contacts" class="py-10">
-        <div class="block mb-3 box-border">
+    <div id="contacts" class="pt-5 pb-10">
+        <div class="block py-5 box-border sticky top-0 bg-gradient-to-b from-white from-90% to-transparent">
             <div class="inline-block me-4 mb-2">
                 <input type="text" v-model="filterText" class="rounded border border-gray-300 w-full" :placeholder="searchPlaceholder" />
             </div>
