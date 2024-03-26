@@ -1,4 +1,7 @@
-[
+import { faBandcamp, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPatreon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBookBible } from "@fortawesome/free-solid-svg-icons";
+
+export let contactsData = [
     {
         "id": "twitter",
         "name": "Twitter",
@@ -8,7 +11,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "twitter"]
+            "content": faTwitter
         }
     },
     {
@@ -20,7 +23,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "facebook-f"]
+            "content": faFacebookF
         }
     },
     {
@@ -32,7 +35,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "youtube"]
+            "content": faYoutube
         }
     },
     {
@@ -44,7 +47,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "instagram"]
+            "content": faInstagram
         }
     },
     {
@@ -57,7 +60,7 @@
         "rel": true,
         "icon": {
             "type": "icon",
-            "content": ["fab", "mastodon"]
+            "content": faMastodon
         }
     },
     {
@@ -69,7 +72,7 @@
         "attributes": ["content", "dev"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "github"]
+            "content": faGithub
         }
     },
     {
@@ -93,7 +96,7 @@
         "attributes": ["dev"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "stack-overflow"]
+            "content": faStackOverflow
         }
     },
     {
@@ -105,7 +108,7 @@
         "attributes": ["dev", "content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "codepen"]
+            "content": faCodepen
         }
     },
     {
@@ -129,7 +132,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "tumblr"]
+            "content": faTumblr
         }
     },
     {
@@ -165,7 +168,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "wikipedia-w"]
+            "content": faWikipediaW
         }
     },
     {
@@ -177,7 +180,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "threads"]
+            "content": faThreads
         }
     },
     {
@@ -201,7 +204,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "reddit-alien"]
+            "content": faRedditAlien
         }
     },
     {
@@ -213,7 +216,7 @@
         "attributes": ["socialnetwork", "content"],
         "icon": {
             "type": "icon",
-            "content": ["fas", "book-bible"]
+            "content": faBookBible
         }
     },
     {
@@ -225,7 +228,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "lastfm"]
+            "content": faLastfm
         }
     },
     {
@@ -261,7 +264,7 @@
         "attributes": ["dev"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "php"]
+            "content": faPhp
         }
     },
     {
@@ -273,7 +276,7 @@
         "attributes": ["contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "linkedin-in"]
+            "content": faLinkedinIn
         }
     },
     {
@@ -285,7 +288,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "soundcloud"]
+            "content": faSoundcloud
         }
     },
     {
@@ -297,7 +300,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "flickr"]
+            "content": faFlickr
         }
     },
     {
@@ -309,7 +312,7 @@
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "weibo"]
+            "content": faWeibo
         }
     },
     {
@@ -321,7 +324,7 @@
         "attributes": ["content"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "ello"]
+            "content": faEllo
         }
     },
     {
@@ -359,7 +362,7 @@
         "attributes": ["financial"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "patreon"]
+            "content": faPatreon
         }
     },
     {
@@ -371,7 +374,7 @@
         "attributes": ["financial"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "kickstarter-k"]
+            "content": faKickstarterK
         }
     },
     {
@@ -383,7 +386,7 @@
         "attributes": ["financial"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "bandcamp"]
+            "content": faBandcamp
         }
     },
     {
@@ -407,7 +410,7 @@
         "attributes": ["financial", "contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "paypal"]
+            "content": faPaypal
         }
     },
     {
@@ -431,7 +434,7 @@
         "attributes": ["contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "telegram"]
+            "content": faTelegram
         }
     },
     {
@@ -443,7 +446,7 @@
         "attributes": ["contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "keybase"]
+            "content": faKeybase
         }
     },
     {
@@ -455,7 +458,7 @@
         "attributes": ["contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "skype"]
+            "content": faSkype
         }
     },
     {
@@ -467,7 +470,7 @@
         "attributes": ["contact"],
         "icon": {
             "type": "icon",
-            "content": ["fab", "google"]
+            "content": faGoogle
         }
     }
-]
+];
