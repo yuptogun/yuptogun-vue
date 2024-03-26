@@ -2,11 +2,11 @@
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import Contact from "../components/Contact.vue";
-import data from "../data/contacts.json";
+import { contactsData } from '../data/contactsData';
 
 const i18n = useI18n();
 const filterTypeOptions = ['socialnetwork', 'content', 'dev', 'financial', 'contact'];
-const contacts = ref(data);
+const contacts = ref(contactsData);
 const filterText = ref(window.localStorage.getItem('filterText') || '');
 const filterTypes = ref(JSON.parse(window.localStorage.getItem('filterTypes') || '[]'));
 const filteredContacts = computed(() => {
@@ -51,4 +51,4 @@ const searchPlaceholder = computed(() => {
             <p class="text-lg pt-1">{{ $t('contacts.placeholders.noResult') }}</p>
         </div>
     </div>
-</template>
+</template>../data/contactsData
