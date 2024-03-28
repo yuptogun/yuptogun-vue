@@ -7,9 +7,12 @@
 
 ## Quick Start
 
-Powered by [Vite 4](https://v4.vitejs.dev/guide/) -- to be upgraded!
-
 ```shell
 npm i
 npm run dev
 ```
+
+## Stacks
+
+* [Vite 4](https://v4.vitejs.dev/) - to be upgraded soon!
+* [Vue 3](https://vuejs.org) - Composition API adopted.
