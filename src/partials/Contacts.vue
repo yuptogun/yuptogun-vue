@@ -51,4 +51,4 @@ const searchPlaceholder = computed(() => {
             <p class="text-lg pt-1">{{ $t('contacts.placeholders.noResult') }}</p>
         </div>
     </div>
-</template>../data/contactsData
+</template>
