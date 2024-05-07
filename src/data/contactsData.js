@@ -220,6 +220,18 @@ export let contactsData = [
         }
     },
     {
+        "id": "tobe",
+        "name": "투비컨티뉴드",
+        "alias": ["알라딘 투비로그", "aladin to be continued", "tobelog"],
+        "contact": "eojin",
+        "url": "https://tobe.aladin.co.kr/t/eojin",
+        "attributes": ["content"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
         "id": "lastfm",
         "name": "last.fm",
         "alias": [],
