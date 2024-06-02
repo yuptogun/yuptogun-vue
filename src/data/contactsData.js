@@ -426,18 +426,6 @@ export let contactsData = [
         }
     },
     {
-        "id": "toss",
-        "name": "Toss",
-        "alias": ["토스"],
-        "contact": "eojin",
-        "url": "https://toss.me/eojin",
-        "attributes": ["financial"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    },
-    {
         "id": "telegram",
         "name": "Telegram",
         "alias": [],
