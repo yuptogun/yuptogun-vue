@@ -1,5 +1,5 @@
 import { faBandcamp, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPatreon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faBookBible } from "@fortawesome/free-solid-svg-icons";
+import { faBomb, faBookBible } from "@fortawesome/free-solid-svg-icons";
 
 export let contactsData = [
     {
@@ -337,6 +337,18 @@ export let contactsData = [
         "icon": {
             "type": "icon",
             "content": faEllo
+        }
+    },
+    {
+        "id": "minesweeper",
+        "name": "Minesweeper Online",
+        "alias": ["지뢰찾기", "마인스위퍼"],
+        "contact": "yuptogun",
+        "url": "https://minesweeper.online/player/21964601",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "icon",
+            "content": faBomb
         }
     },
     {
