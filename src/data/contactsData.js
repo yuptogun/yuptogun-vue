@@ -1,4 +1,4 @@
-import { faBandcamp, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPatreon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBandcamp, faBluesky, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPatreon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faBomb, faBookBible } from "@fortawesome/free-solid-svg-icons";
 
 export let contactsData = [
@@ -191,8 +191,8 @@ export let contactsData = [
         "url": "https://bsky.app/profile/eojin.bsky.social",
         "attributes": ["socialnetwork"],
         "icon": {
-            "type": "text",
-            "content": null
+            "type": "icon",
+            "content": faBluesky
         }
     },
     {
