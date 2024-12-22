@@ -1,4 +1,4 @@
-import { faBandcamp, faBluesky, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPatreon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBandcamp, faBluesky, faCodepen, faEllo, faFacebookF, faFlickr, faGithub, faGoogle, faInstagram, faKeybase, faKickstarterK, faLastfm, faLinkedinIn, faMastodon, faPaypal, faPhp, faRedditAlien, faSkype, faSoundcloud, faStackOverflow, faTelegram, faThreads, faTumblr, faTwitter, faWeibo, faWhatsapp, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faBomb, faBookBible } from "@fortawesome/free-solid-svg-icons";
 
 export let contactsData = [
@@ -378,18 +378,6 @@ export let contactsData = [
         }
     },
     {
-        "id": "patreon",
-        "name": "Patreon",
-        "alias": [],
-        "contact": "eojin",
-        "url": "https://www.patreon.com/eojin/",
-        "attributes": ["financial"],
-        "icon": {
-            "type": "icon",
-            "content": faPatreon
-        }
-    },
-    {
         "id": "kickstarter",
         "name": "Kickstarter",
         "alias": [],
@@ -471,6 +459,18 @@ export let contactsData = [
         "icon": {
             "type": "icon",
             "content": faSkype
+        }
+    },
+    {
+        "id": "whatsapp",
+        "name": "WhatsApp",
+        "alias": ["wa", "왓츠앱", "와츠앱", "왓앱"],
+        "contact": "89014568",
+        "url": "https://wa.me/6589014568",
+        "attributes": ["contact"],
+        "icon": {
+            "type": "icon",
+            "content": faWhatsapp
         }
     },
     {
