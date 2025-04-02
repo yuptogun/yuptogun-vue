@@ -188,7 +188,7 @@ export let contactsData = [
         "name": "BlueSky",
         "alias": ["블스", "블루스카이"],
         "contact": "eojin",
-        "url": "https://bsky.app/profile/eojin.bsky.social",
+        "url": "https://bsky.app/profile/eojin.dev",
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
@@ -243,18 +243,18 @@ export let contactsData = [
             "content": faLastfm
         }
     },
-    {
-        "id": "snippet",
-        "name": "Snippet",
-        "alias": [],
-        "contact": "@eojin",
-        "url": "https://snippet.cloudmt.co.kr/@eojin",
-        "attributes": ["dev"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    },
+    // {
+    //     "id": "snippet",
+    //     "name": "Snippet",
+    //     "alias": [],
+    //     "contact": "@eojin",
+    //     "url": "https://snippet.cloudmt.co.kr/@eojin",
+    //     "attributes": ["dev"],
+    //     "icon": {
+    //         "type": "text",
+    //         "content": null
+    //     }
+    // },
     {
         "id": "programmers",
         "name": "Programmers",
@@ -327,18 +327,18 @@ export let contactsData = [
             "content": faWeibo
         }
     },
-    {
-        "id": "ello",
-        "name": "Ello",
-        "alias": [],
-        "contact": "eojin",
-        "url": "https://ello.co/eojin/",
-        "attributes": ["content"],
-        "icon": {
-            "type": "icon",
-            "content": faEllo
-        }
-    },
+    // {
+    //     "id": "ello",
+    //     "name": "Ello",
+    //     "alias": [],
+    //     "contact": "eojin",
+    //     "url": "https://ello.co/eojin/",
+    //     "attributes": ["content"],
+    //     "icon": {
+    //         "type": "icon",
+    //         "content": faEllo
+    //     }
+    // },
     {
         "id": "minesweeper",
         "name": "Minesweeper Online",
@@ -401,18 +401,18 @@ export let contactsData = [
             "content": faBandcamp
         }
     },
-    {
-        "id": "tumblbug",
-        "name": "Tumblbug",
-        "alias": ["텀블벅"],
-        "contact": "eojin",
-        "url": "https://tumblbug.com/u/eojin/backed",
-        "attributes": ["financial"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    },
+    // {
+    //     "id": "tumblbug",
+    //     "name": "Tumblbug",
+    //     "alias": ["텀블벅"],
+    //     "contact": "eojin",
+    //     "url": "https://tumblbug.com/u/eojin/backed",
+    //     "attributes": ["financial"],
+    //     "icon": {
+    //         "type": "text",
+    //         "content": null
+    //     }
+    // },
     {
         "id": "paypal",
         "name": "PayPal",
