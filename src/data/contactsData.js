@@ -176,7 +176,7 @@ export let contactsData = [
         "name": "Threads",
         "alias": ["쓰레드", "스레드"],
         "contact": "yuptogun",
-        "url": "https://threads.net/@yuptogun",
+        "url": "https://threads.com/@yuptogun",
         "attributes": ["socialnetwork"],
         "icon": {
             "type": "icon",
@@ -187,7 +187,7 @@ export let contactsData = [
         "id": "bsky",
         "name": "BlueSky",
         "alias": ["블스", "블루스카이"],
-        "contact": "eojin",
+        "contact": "eojin.dev",
         "url": "https://bsky.app/profile/eojin.dev",
         "attributes": ["socialnetwork"],
         "icon": {
@@ -207,18 +207,18 @@ export let contactsData = [
             "content": faRedditAlien
         }
     },
-    {
-        "id": "biblecom",
-        "name": "Bible.com",
-        "alias": ["성경"],
-        "contact": "yuptogun",
-        "url": "https://my.bible.com/users/yuptogun",
-        "attributes": ["socialnetwork", "content"],
-        "icon": {
-            "type": "icon",
-            "content": faBookBible
-        }
-    },
+    // {
+    //     "id": "biblecom",
+    //     "name": "Bible.com",
+    //     "alias": ["성경"],
+    //     "contact": "yuptogun",
+    //     "url": "https://my.bible.com/users/yuptogun",
+    //     "attributes": ["socialnetwork", "content"],
+    //     "icon": {
+    //         "type": "icon",
+    //         "content": faBookBible
+    //     }
+    // },
     {
         "id": "tobe",
         "name": "투비컨티뉴드",
@@ -255,18 +255,18 @@ export let contactsData = [
     //         "content": null
     //     }
     // },
-    {
-        "id": "programmers",
-        "name": "Programmers",
-        "alias": ["프로그래머스", "해시코드", "hashcode"],
-        "contact": "엽토군",
-        "url": "https://qna.programmers.co.kr/users/81197/",
-        "attributes": ["dev"],
-        "icon": {
-            "type": "text",
-            "content": null
-        }
-    },
+    // {
+    //     "id": "programmers",
+    //     "name": "Programmers",
+    //     "alias": ["프로그래머스", "해시코드", "hashcode"],
+    //     "contact": "엽토군",
+    //     "url": "https://qna.programmers.co.kr/users/81197/",
+    //     "attributes": ["dev"],
+    //     "icon": {
+    //         "type": "text",
+    //         "content": null
+    //     }
+    // },
     {
         "id": "packagist",
         "name": "Packagist",
