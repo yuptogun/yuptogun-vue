@@ -268,6 +268,18 @@ export let contactsData = [
     //     }
     // },
     {
+        "id": "parlia",
+        "name": "Parlia",
+        "alias": ["팔리아","eo","encyclopedia of opinion"],
+        "contact": "eojin",
+        "url": "https://www.parlia.com/u/eojin",
+        "attributes": ["socialnetwork"],
+        "icon": {
+            "type": "text",
+            "content": null
+        }
+    },
+    {
         "id": "packagist",
         "name": "Packagist",
         "alias": ["php"],
