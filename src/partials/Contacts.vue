@@ -33,18 +33,21 @@ const searchPlaceholder = computed(() => {
 
 <template>
     <div id="contacts" class="pt-5 pb-10">
-        <div class="block py-5 box-border sticky top-0 bg-gradient-to-b from-white from-90% to-transparent">
-            <div class="inline-block me-4 mb-2">
-                <input type="text" v-model="filterText" class="rounded border border-gray-300 w-full" :placeholder="searchPlaceholder" />
+        <div class="block box-border sticky top-0">
+            <div class="pt-4 pb-2 bg-white dark:bg-gray-900">
+                <div class="inline-block me-4 mb-2">
+                    <input type="text" v-model="filterText" class="rounded border border-gray-300 dark:border-gray-600 bg-transparent w-full" :placeholder="searchPlaceholder" />
+                </div>
+                <div class="inline-block">
+                    <template v-for="option in filterTypeOptions" :key="option">
+                        <label class="me-4 mb-2 inline-block select-none">
+                            <input type="checkbox" class="rounded bg-transparent dark:focus:ring-offset-gray-900" v-model="filterTypes" :value="option" />
+                            {{ i18n.t('contacts.labels.' + option) }}
+                        </label>
+                    </template>
+                </div>
             </div>
-            <div class="inline-block">
-                <template v-for="option in filterTypeOptions" :key="option">
-                    <label class="me-4 mb-2 inline-block select-none">
-                        <input type="checkbox" class="rounded" v-model="filterTypes" :value="option" />
-                        {{ i18n.t('contacts.labels.' + option) }}
-                    </label>
-                </template>
-            </div>
+            <div class="h-4 bg-gradient-to-b to-transparent from-white dark:from-gray-900"></div>
         </div>
         <Contact v-for="c in filteredContacts" :key="c.id" :contact="c"></Contact>
         <div v-if="filteredContacts.length == 0">
