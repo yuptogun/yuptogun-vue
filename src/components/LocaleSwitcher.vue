@@ -1,10 +1,12 @@
 <script setup>
+import { useStorage } from '@vueuse/core';
 import { useI18n } from 'vue-i18n';
 
 const i18n = useI18n();
+const locale = useStorage('locale', 'ko');
 
 const changeLocale = function (l) {
-    window.localStorage.setItem('locale', l);
+    locale.value = l;
     i18n.locale.value = l;
 };
 const getClassnames = function (l) {
