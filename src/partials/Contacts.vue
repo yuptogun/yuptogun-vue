@@ -1,17 +1,19 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useStorage } from '@vueuse/core';
 import Contact from "../components/Contact.vue";
 import { contactsData } from '../data/contactsData';
 
 const i18n = useI18n();
 const filterTypeOptions = ['socialnetwork', 'content', 'dev', 'financial', 'contact'];
 const contacts = ref(contactsData);
-const filterText = ref(window.localStorage.getItem('filterText') || '');
-const filterTypes = ref(JSON.parse(window.localStorage.getItem('filterTypes') || '[]'));
+const filterText = useStorage('filterText', '');
+const filterTypes = useStorage('filterTypes', []);
+const updateFilterText = (e) => {
+    filterText.value = e.target.value;
+};
 const filteredContacts = computed(() => {
-    window.localStorage.setItem('filterText', filterText.value);
-    window.localStorage.setItem('filterTypes', JSON.stringify(filterTypes.value));
     return contacts.value.filter((c) => {
         let filterTextValue = filterText.value.toLowerCase();
         const textMatches = filterTextValue == '' || (
@@ -36,7 +38,7 @@ const searchPlaceholder = computed(() => {
         <div class="block box-border sticky top-0">
             <div class="pt-4 pb-2 bg-white dark:bg-gray-900">
                 <div class="inline-block me-4 mb-2">
-                    <input type="text" v-model="filterText" class="rounded border border-gray-300 dark:border-gray-600 bg-transparent w-full" :placeholder="searchPlaceholder" />
+                    <input type="text" v-model="filterText" @input="updateFilterText($event)" class="rounded border border-gray-300 dark:border-gray-600 bg-transparent w-full" :placeholder="searchPlaceholder" />
                 </div>
                 <div class="inline-block">
                     <template v-for="option in filterTypeOptions" :key="option">
